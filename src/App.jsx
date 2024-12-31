@@ -1,7 +1,7 @@
-import Hookref from './HookRef';
+// import Hookref from './HookRef';
 import './App.css'
 import { createContext, useEffect, useState } from 'react';
-import Console from './Console';
+// import Console from './Console';
 import Hen from './Fun/Hen';
 export let nameContext = createContext();
 
@@ -13,7 +13,8 @@ function App() {
     //         console.log('code cleanup')
     //     })
     // }, [count]);
-
+    
+    
   return (
     <>
         {/* <h1>Count:{count}</h1>
@@ -21,9 +22,12 @@ function App() {
         <button onClick={() => setCount(count - 1)}>Decrement</button>
         <Hookref /> */}
         {/* <Console /> */}
+        <fieldset id="fil">
+        <legend>Components</legend>
         <nameContext.Provider value="water">
         <Hen />
-        </nameContext.Provider>
+        </nameContext.Provider> 
+        </fieldset> 
     </>
   )
 }
