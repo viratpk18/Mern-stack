@@ -2,11 +2,11 @@ import React from 'react';
 import Egg from './Egg';
 import '../App.jsx';
 
-const Hen = ({name}) => {
+const Hen = () => {
     return (
         <div>
             <h2>Hen</h2>
-            <Egg name={name}/>
+            <Egg />
         </div>
     );
 };

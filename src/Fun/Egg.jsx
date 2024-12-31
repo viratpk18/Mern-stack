@@ -1,11 +1,11 @@
 import React from 'react';
 import Half from './Half';
 
-const Egg = ({name}) => {
+const Egg = () => {
     return (
         <div>
             <h2>Egg</h2>
-            <Half name={name}/>
+            <Half />
         </div>
     );
 };

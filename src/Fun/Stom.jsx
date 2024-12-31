@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { nameContext } from '../App';
 
-const Stom = ({name}) => {
+const Stom = () => {
+    let name = useContext(nameContext);
     return (
         <div>
             <h2>Stomach = {name}</h2>

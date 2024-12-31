@@ -2,7 +2,7 @@ import "../App.css";
 
 function Contact() {
     return (
-        <div>
+        <div id="contact">
             <h1>Contact</h1>
             <p>Phone: +91 6374948623</p>
             <p>Email: praveenkumar2k4.t@gmail.com</p>
