@@ -72,7 +72,7 @@ button:hover {
 }
 .hash {
   list-style: none; 
-  padding-left: 1em;
+  padding-left: 1.5em;
 }
 .hash li::before {
   content: "#"; 
