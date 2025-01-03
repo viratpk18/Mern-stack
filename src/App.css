@@ -30,10 +30,6 @@ footer {
   width: 100%;
   text-align: center;
 }
-#home{
-  text-align: left;
-  margin-left: 30rem;
-}
 #stom{
   background-color: black;
   width: 50%;
@@ -41,8 +37,4 @@ footer {
 #mybutton{
   background-color: rgb(92, 108, 249);
   width: 50%;
-}
-#fil{
-  width: 50%;
-  margin-left: 50%;
 }
