@@ -1,8 +1,10 @@
 import express from 'express';
-import { fetch,create } from '../controller/userController.js';
+import { fetch,create,update,deleteuser } from '../controller/userController.js';
 
 const router = express.Router();
 router.post('/create', create);
-// router.get('/fetch', fetch);
+router.get('/fetch', fetch);
+router.put('/update/:id', update);
+router.delete('/delete/:id', deleteuser);
 
 export default router;
