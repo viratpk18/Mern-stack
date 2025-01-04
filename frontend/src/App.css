@@ -2,20 +2,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 500px;
+    margin-left: 420px;
     margin-top: 60px; 
 }
 #link{
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.321);
+    background-color: rgba(150, 172, 238, 0.321);
     
 }
 #kem{
-    color: rgb(0, 0, 0);
-    background-color: rgba(246, 244, 235, 0.46);
+    color: rgba(255, 255, 255, 0.842);
+    background-color: rgba(113, 126, 247, 0.403);
 }
 #ut{
     border-color: rgba(255, 255, 255, 0.474);
+    background-color: rgba(0, 0, 0, 0.321);
+    color: rgb(255, 255, 255);
 }
 #uset {
     width: 100%;
@@ -69,7 +71,14 @@
     background-color: #0056b3;
 }
 #uds{
+    background-color: rgba(0, 0, 0, 0.125);
+    color: rgb(250, 249, 247);
+    text-align: center;
+    margin-left: 160px;
+    width: 50%;
+}
+#udsa{
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.21);
+    background-color: rgba(234, 219, 219, 0.196);
     text-align: center;
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const CreateUser = () => {
     const [name, setName] = useState('');
@@ -64,6 +64,7 @@ const CreateUser = () => {
                     <button type="submit">Create User</button>
                 </form>
             </fieldset>
+            <Link to="/">Back to Home</Link>
         </div>
     );
 };

@@ -33,10 +33,7 @@ const User = () => {
     };
     return (
         <div>
-            <div id="uds">
-                <h1>User's Data</h1>
-                <h2><Link to="/create">Create User</Link></h2>
-            </div>
+                <h1 id="uds">User's Data</h1>
             <table id="ut" border="1">
                 <thead>
                     <tr>
@@ -44,7 +41,8 @@ const User = () => {
                         <th>Name</th>
                         <th>Age</th>
                         <th>Email</th>
-                        <th>Action</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -54,14 +52,13 @@ const User = () => {
                             <td>{user.name}</td>
                             <td>{user.age}</td>
                             <td>{user.email}</td>
-                            <td>
-                                <Link id="link" to={`/update/${user._id}`}>Update User</Link>
-                                <button id="kem" onClick={() => deleteUser(user._id)}>Delete</button>
-                            </td>
+                            <td><Link id="link" to={`/update/${user._id}`}>Update User</Link></td>
+                            <td><button id="kem" onClick={() => deleteUser(user._id)}>Delete</button></td>
                         </tr>
                     ))}
                 </tbody>
             </table>
+            <h3><Link id="udsa" to="/create">To click to create new user</Link></h3>
         </div>
     );
 };

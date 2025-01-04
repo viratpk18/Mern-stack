@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 
 const Updateuser = () => {
@@ -71,6 +71,7 @@ const Updateuser = () => {
                     <button type="submit">Update</button>
                 </form>
             </fieldset>
+            <Link to="/">Back to Home</Link>
         </div>
     );
 };
