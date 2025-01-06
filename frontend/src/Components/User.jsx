@@ -9,7 +9,7 @@ const User = () => {
         fetchUsers();
     }, []);
     const fetchUsers = () => {
-        axios.get("http://localhost:3000/api/user/fetch")
+        axios.get("https://backend-xg4e.onrender.com/api/user/fetch")
             .then(response => {
                 setUser(response.data.users);
             })
@@ -20,7 +20,7 @@ const User = () => {
     const deleteUser = (id) => {
         const isConfirmed = window.confirm("Are you sure you want to delete this user?");
         if (isConfirmed) {
-            axios.delete(`http://localhost:3000/api/user/delete/${id}`)
+            axios.delete(`https://backend-xg4e.onrender.com/api/user/delete/${id}`)
                 .then(() => {
                     alert("User deleted successfully!");
                     fetchUsers();

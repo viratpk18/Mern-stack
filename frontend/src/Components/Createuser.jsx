@@ -16,7 +16,7 @@ const CreateUser = () => {
             email: email
         };
 
-        axios.post('http://localhost:3000/api/user/create', newUser)
+        axios.post('https://backend-xg4e.onrender.com/api/user/create', newUser)
             .then((response) => {
                 console.log('User Created:', response.data);
                 alert('User created successfully!');
