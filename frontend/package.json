@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "fix-permissions": "npx cross-env chmod +x ./node_modules/.bin/vite",
+    "build": "npm run fix-permissions && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
